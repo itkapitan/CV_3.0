@@ -1,0 +1,41 @@
+.photoWr {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  width: 540px;
+  height: calc(100% + 100px);
+  margin-top: -50px;
+  border-radius: 16px;
+  padding-bottom: 80px;
+  gap: 8px;
+  background: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0) 45%,
+      rgba(0, 0, 0, 0.8) 100%
+    ),
+    url("/rodion.png") lightgray 50% / cover no-repeat;
+  transition: all 0.5s ease;
+}
+
+.name {
+  display: flex;
+  font-size: 44px;
+  font-weight: 500;
+}
+.position {
+  display: flex;
+  font-size: 16px;
+}
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.linkItem {
+  transition: color 0.2s ease;
+}
+.linkItem:hover {
+  color: #b38861;
+}
