@@ -2,13 +2,16 @@ import Link from "next/link";
 import s from "./Photo.module.css";
 import { IconBrandBehance, IconBrandDribbble } from "@tabler/icons-react";
 
-export default function Photo() {
+type Profile = {
+  name: string;
+  position: string;
+};
+
+export default function Photo({ profile }: { profile: Profile }) {
   return (
     <div className={s.photoWr}>
-      <div className={s.name}>Родион Бычковяк</div>
-      <div className={s.position}>
-        Lead UI/UX/Product Designer & Frontend Developer
-      </div>
+      <div className={s.name}>{profile.name}</div>
+      <div className={s.position}>{profile.position}</div>
       <div className={s.links}>
         <Link
           href="https://www.behance.net/uiArchitect"

@@ -41,7 +41,7 @@ export default async function Home({ params }: PageProps) {
       <ScrollRestorer />
       <Lang />
       <Navigation />
-      <Photo />
+      <Photo profile={dict.profile} />
       <div id="content-scroll" className={s.content}>
         <h2 className={s.title} id="about">
           {dict.about.title}
@@ -53,13 +53,13 @@ export default async function Home({ params }: PageProps) {
             <div className={s.infoMiniText}>{dict.about.city}</div>
             <div className={s.infoMiniDivider}>|</div>
             <div className={s.infoMiniText}>
-              <Link href="#" target="_blank">
+              <Link href="https://t.me/radcor" target="_blank">
                 Telegram
               </Link>
             </div>
             <div className={s.infoMiniDivider}>|</div>
             <div className={s.infoMiniText}>
-              <Link href="#" target="_blank">
+              <Link href="tel:+380665515131" target="_blank">
                 +38 (066) 551-51-31
               </Link>
             </div>

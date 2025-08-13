@@ -10,6 +10,11 @@ const rubik = Rubik({
 export const metadata: Metadata = {
   title: "Rodion Bychkoviak CV",
   description: "Lead UI/UX/Product Designer & Frontend Developer",
+  manifest: "/manifest.webmanifest",
+  icons: {
+    icon: "/icon.png",
+    apple: "/apple-icon.png",
+  },
 };
 
 export default function RootLayout({
