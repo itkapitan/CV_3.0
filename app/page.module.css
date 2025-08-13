@@ -1,3 +1,7 @@
+.pt16 {
+  padding-top: 16px;
+}
+
 .container {
   display: flex;
   width: 100%;
@@ -5,18 +9,94 @@
   height: calc(100vh - 200px);
   background: #1d1e20;
   border-radius: 16px;
+  position: relative;
 }
 .content {
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   flex: 1;
   height: 100%;
   overflow-x: hidden;
   padding: 16px 32px;
+  gap: 10px;
 }
 
-.TEST {
-  background: #1d2e20;
-  display: block;
+h2.title {
+  display: flex;
   width: 100%;
-  height: 2000px;
+  padding: 32px 0 16px 0;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+h3.title {
+  display: flex;
+  padding: 32px 0 16px 0;
+  align-items: center;
+  gap: 10px;
+  color: #fff;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  gap: 10px;
+}
+.infoMini {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.infoMiniText {
+  color: #b38861;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 30px;
+}
+.info {
+  color: #d8d8d8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+}
+.greed {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+}
+.greedItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #d8d8d8;
+  font-family: Rubik;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 26px;
+}
+.greedIcon {
+  width: 24px;
+  height: 24px;
+  color: #b38861;
+}
+.experience {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
 }

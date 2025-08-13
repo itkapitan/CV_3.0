@@ -1,0 +1,39 @@
+{
+  "about": {
+    "title": "About me",
+    "age": "35 years",
+    "city": "Kyiv",
+    "description": "Head of Design with 13+ years in UI/UX and front-end. Led teams delivering complex digital products across fintech, e-commerce, casino and ERP. Strong in interface design, animation, branding and design systems. Combine creativity with technical precision and deep business and user understanding."
+  },
+  "designSkills": {
+    "title": "Design skills",
+    "description": "I build large-scale token-based design systems with component variability, theming and responsive states. I design intuitive, research-driven interfaces and manage delivery end-to-end."
+  },
+  "devSkills": {
+    "title": "Development skills",
+    "description": "I design systems with tokenization, theming and responsive states. I plan processes, manage tasks, conduct reviews and present result to stakeholders."
+  },
+  "experience": {
+    "title": "Experience"
+  },
+  "experienceCompany": [
+    {
+      "title": "Asvio Bank",
+      "position": "Head of UI/UX Designer",
+      "period": "2024 - 2025 (1 year)",
+      "description": "Built large-scale token-based design systems with component variability, theming and responsive states."
+    },
+    {
+      "title": "NovaTech",
+      "position": "Lead Product Designer",
+      "period": "2022 - 2024",
+      "description": "Led design of multi-platform products, created design system, collaborated with engineering and stakeholders."
+    },
+    {
+      "title": "PixelForge Studio",
+      "position": "Senior UI/UX Designer",
+      "period": "2019 - 2022",
+      "description": "Delivered user-centered interfaces, prototyped, tested and iterated features to improve key metrics."
+    }
+  ]
+}

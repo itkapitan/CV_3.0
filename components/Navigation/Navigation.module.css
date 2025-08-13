@@ -4,5 +4,28 @@
   justify-content: center;
   align-items: center;
   width: 80px;
+  border-radius: 16px 0 0 16px;
   overflow: hidden;
+}
+.link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  color: #b38861;
+  transition: all 0.2s ease;
+}
+.linkActive {
+  color: #fff;
+  background: #b38861;
+}
+.link:hover {
+  color: #fff;
+  background: #8c6038;
+}
+.icon {
+  display: block;
+  width: 30px;
+  height: 30px;
 }

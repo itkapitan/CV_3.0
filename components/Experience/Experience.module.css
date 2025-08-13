@@ -1,0 +1,76 @@
+.expItem {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.expLeft,
+.expLeft * {
+  text-align: right;
+  justify-content: flex-end;
+}
+.expRight,
+.expRight * {
+  text-align: left;
+  justify-content: flex-start;
+}
+
+.expLeft {
+  border-right: 4px solid #4b4f58;
+  padding-right: 20px;
+  position: relative;
+}
+.expLeft:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1/1;
+  background: #4b4f58;
+  border: 8px solid #1d1e20;
+  border-radius: 9999px;
+  position: absolute;
+  top: 0px;
+  right: -18px;
+}
+.expRight {
+  margin-left: calc(50% - 4px);
+  border-left: 4px solid #4b4f58;
+  padding-left: 20px;
+  position: relative;
+}
+.expRight:after {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  aspect-ratio: 1/1;
+  background: #4b4f58;
+  border: 8px solid #1d1e20;
+  border-radius: 9999px;
+  position: absolute;
+  top: 0px;
+  left: -18px;
+}
+
+.expTitle {
+  color: #d8d8d8;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+}
+.expPosition,
+.expPeriod {
+  color: #b38861;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.expDescription {
+  color: #d8d8d8;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
