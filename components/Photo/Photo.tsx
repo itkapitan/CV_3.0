@@ -10,10 +10,18 @@ export default function Photo() {
         Lead UI/UX/Product Designer & Frontend Developer
       </div>
       <div className={s.links}>
-        <Link href="#" target="_blank" className={s.linkItem}>
+        <Link
+          href="https://www.behance.net/uiArchitect"
+          target="_blank"
+          className={s.linkItem}
+        >
           <IconBrandBehance />
         </Link>
-        <Link href="#" target="_blank" className={s.linkItem}>
+        <Link
+          href="https://dribbble.com/uiArchitect"
+          target="_blank"
+          className={s.linkItem}
+        >
           <IconBrandDribbble />
         </Link>
       </div>

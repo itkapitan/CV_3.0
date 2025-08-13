@@ -14,7 +14,7 @@
       rgba(0, 0, 0, 0) 45%,
       rgba(0, 0, 0, 0.8) 100%
     ),
-    url("/rodion.png") lightgray 50% / cover no-repeat;
+    url("/rodion1.png") lightgray 50% / cover no-repeat;
   transition: all 0.5s ease;
 }
 
@@ -37,5 +37,5 @@
   transition: color 0.2s ease;
 }
 .linkItem:hover {
-  color: #b38861;
+  color: #00a3ff;
 }

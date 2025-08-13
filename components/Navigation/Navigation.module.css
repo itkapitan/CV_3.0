@@ -13,16 +13,16 @@
   align-items: center;
   width: 80px;
   height: 80px;
-  color: #b38861;
+  color: #00a3ff;
   transition: all 0.2s ease;
 }
 .linkActive {
   color: #fff;
-  background: #b38861;
+  background: #00a3ff;
 }
 .link:hover {
   color: #fff;
-  background: #8c6038;
+  background: #0089d6;
 }
 .icon {
   display: block;

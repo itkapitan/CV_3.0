@@ -29,11 +29,12 @@ import { getDictionary } from "@/localization/getDictionary";
 import ScrollRestorer from "./pageLogic";
 
 type PageProps = {
-  params: { lang: string };
+  params: Promise<{ lang: string }>;
 };
 
 export default async function Home({ params }: PageProps) {
-  const dict = await getDictionary(params.lang);
+  const { lang } = await params;
+  const dict = await getDictionary(lang);
 
   return (
     <div className={s.container}>
