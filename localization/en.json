@@ -11,11 +11,11 @@
   },
   "designSkills": {
     "title": "Design skills",
-    "description": "I build large-scale token-based design systems with component variability, theming and responsive states. I design intuitive, research-driven interfaces and manage delivery end-to-end."
+    "description": "I create large-scale token-based design systems with flexible component variations, themes, and adaptive states. I design interfaces that are clear at a glance, based on research and testing. Lead a project from idea to finished product, ensuring a consistent style and fast development speed."
   },
   "devSkills": {
     "title": "Development skills",
-    "description": "I design systems with tokenization, theming and responsive states. I plan processes, manage tasks, conduct reviews and present result to stakeholders."
+    "description": "I develop fast, adaptive and reliable interfaces with clean code and well thought-out architecture. I know how to combine design and development so that the result looks flawless and works consistently. I optimize performance, implement modern technologies and ensure easy scalability of the project."
   },
   "experience": {
     "title": "Experience"
@@ -24,20 +24,71 @@
     {
       "title": "Asvio Bank",
       "position": "Head of UI/UX Designer",
-      "period": "2024 - 2025 (1 year)",
-      "description": "Built large-scale token-based design systems with component variability, theming and responsive states."
+      "period": "2024 - 2025 (1 year 5 months)",
+      "description": "Launched a new mobile banking app amobank from scratch, combining strategy, design and development into a single ecosystem. Created a scalable design system with documentation that accelerated the team's work and ensured the visual integrity of the product. Led a small but highly effective design team that designed a user-friendly and intuitive interface with a full range of features: loans, deposits, mobile recharge, P2P and IBAN transfers, and other key services. Organized close interaction with developers and business analysts, which allowed to release the product in App Store and Google Play on time and without loss of quality. The application became an important tool for attracting and retaining clients."
     },
     {
-      "title": "NovaTech",
-      "position": "Lead Product Designer",
-      "period": "2022 - 2024",
-      "description": "Led design of multi-platform products, created design system, collaborated with engineering and stakeholders."
+      "title": "Brain Rockets",
+      "position": "Head of Art & UI/UX Designer",
+      "period": "2024 - 2024 (4 months)",
+      "description": "Led a team of 6 designers, combining creativity and a systematic approach to product development. Generated concepts for new projects and created casual-style sketches on a tablet, setting visual direction. Organized work so that graphic designers turned ideas into final illustrations and UI/UX designers integrated them into layouts based on the design system, customizing them for the product. Ensured smooth communication within the team, allowing for the rapid launch of visually cohesive and technically sound projects."
     },
     {
-      "title": "PixelForge Studio",
+      "title": "Gart Technologies",
+      "position": "Lead UI/UX Designer",
+      "period": "2022-2024 (2 years)",
+      "description": "Managed a team of 3 designers and created interfaces of varying complexity, mostly for international markets. Realized about 10 major projects, including a cryptocurrency wallet and a government health-tech service for the UAE. Ensured a high level of design quality and adaptation to cultural and technical peculiarities of different markets. Organized the full cycle of work - from ideas and prototypes to finished layouts, which accelerated the launch and increased the competitiveness of products."
+    },
+    {
+      "title": "Agroindustrial holding MHP",
       "position": "Senior UI/UX Designer",
-      "period": "2019 - 2022",
-      "description": "Delivered user-centered interfaces, prototyped, tested and iterated features to improve key metrics."
+      "period": "2019-2021 (2 years)",
+      "description": "Developed digital products for the company's internal and external use. One of the key projects was a system for Western partners, which allowed them to track containers with products in real time, including port and ship details. I created the design system and interface from scratch, as well as participated in React development, which ensured high performance and usability of the service. The project was highly appreciated by the management, for which he was awarded a bonus of two salaries. In parallel, he realized other projects: from lendings and promo pages for promotions to advertising banners, keeping the same style and high quality of workmanship."
+    },
+    {
+      "title": "Bimp",
+      "position": "Senior Product Designer & Middle React Developer",
+      "period": "2019-2019  (6 months)",
+      "description": "I developed a design system from scratch and used it to design the interface of CRM/ERP system. I actively participated in frontend development, which allowed to ensure high speed of implementation and consistency between design and code. The project was successfully brought to the market and continues to work steadily, bringing profit to the company and remaining a popular tool for clients."
+    },
+    {
+      "title": "Renklod LDT",
+      "position": "Lead UI/UX / Web Designer & Lead Frontend Developer",
+      "period": "2016-2019 (2 years 7 months)",
+      "description": "Joined the company as a Senior Designer and initiated a strategic decision to take outsourced development in-house. Formed a cross-functional team of 3 designers, 2 frontend and 1 backend developer. Under my leadership, the team improved 4 existing mono-brand stores and launched 7 more new stores, each with consistent and strong sales results. I provided the full cycle of product creation - from idea and design to launch and optimization, which significantly accelerated and improved the development of e-commerce direction of the company. At the same time, I grew as a specialist to the Lead level, learning not only to perform tasks, but also to distribute them among team members, to conduct reviews, to be a mentor and maintain team spirit."
+    },
+    {
+      "title": "Freelance",
+      "position": "Senior UI/UX Designer & Senior Frontend Developer",
+      "period": "2015-2016 (1 year)",
+      "description": "I switched to freelancing to realize my own educational project. I developed an author's program on frontend development, recorded a video course, created a website, and built a sales system. Already on the first day of the launch, sales amounted to $1,300. At the same time, he carried out freelance projects of varying levels of complexity - from web applications and lendings to complex interfaces, combining design and development to maximize the quality of results."
+    },
+    {
+      "title": "Foxtrot",
+      "position": "Senior Product Designer & Senior Frontend Developer",
+      "period": "2012-2015 (2 years 5 months)",
+      "description": "Responsible for the redesign of the company's flagship product - the Foxtrot online store. Conducted qualitative research with surveys of the target audience, analyzed the data, prioritized the identified problems and solved them first at the design level, and then at the code level. At the same time, I developed full-cycle advertising lendings - from planning and design to front-end implementation, ensuring high conversion rate and visual integrity of the brand."
+    },
+    {
+      "title": "Genesis",
+      "position": "Middle Frontend Developer",
+      "period": "2012-2012 (6 months)",
+      "description": "Worked in the development team on Jiji - one of the largest marketplaces in Africa, an analog of OLX. Participated in the creation and optimization of the user interface, implemented new features and ensured stable operation of the product under high load. Gained experience working in a large international company and interacting with a distributed development team."
+    },
+    {
+      "title": "Page",
+      "position": "Middle UI/UX Designer & Middle Frontend Developer",
+      "period": "2011-2012 (6 months)",
+      "description": "The first company in my career where I combined design and frontend development. I created full-cycle projects - from prototypes and design to finished code. I realized about 10 projects of varying complexity, including a website for a cab service, lendings, a website for a residential complex and other commercial solutions. Gained basic experience in teamwork and consolidated skills in creating turnkey projects."
+    },
+    {
+      "title": "Freelance",
+      "position": "Junior UI/UX Designer & Junior Frontend Developer",
+      "period": "2010-2011 (6 months)",
+      "description": "After my first projects - one pet project and one commercial order for acquaintances - I went freelance to monetize my skills. I worked on projects of various formats: from purely design projects to a full turnkey development cycle. I implemented interfaces, did frontend and backend development, as well as full deployment of projects on domains and hosting."
     }
-  ]
+  ],
+  "end": {
+    "title": "The end - thank U for your attention 🫰"
+  }
 }

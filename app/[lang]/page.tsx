@@ -119,7 +119,7 @@ export default async function Home({ params }: PageProps) {
             <IconFileTypeTsx className={s.greedIcon} /> JSX / TSX 10/10
           </div>
           <div className={s.greedItem}>
-            <IconHttpQue className={s.greedIcon} /> jQuery 8/10 8/10
+            <IconHttpQue className={s.greedIcon} /> jQuery 8/10
           </div>
           <div className={s.greedItem}>
             <IconBrandTypescript className={s.greedIcon} /> Java / Type Script
@@ -163,6 +163,8 @@ export default async function Home({ params }: PageProps) {
             <Experience item={dict.experienceCompany} side="left" />
           )}
         </div>
+
+        <h3 className={cn(s.title, s.jcc)}>{dict.end.title}</h3>
       </div>
     </div>
   );
