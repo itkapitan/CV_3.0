@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@hotjar/browser": "^1.0.9",
     "@tabler/icons-react": "^3.34.1",
     "classnames": "^2.5.1",
     "next": "15.4.6",
