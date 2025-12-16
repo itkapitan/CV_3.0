@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Rubik } from "next/font/google";
 import "./globals.css";
-import HotjarInit from "./HotjarInit";
+import ClarityInit from "./ClarityInit";
 
 const rubik = Rubik({
   subsets: ["latin"],
@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={rubik.className}>{children}</body>
-      <HotjarInit />
+      <ClarityInit />
     </html>
   );
 }
