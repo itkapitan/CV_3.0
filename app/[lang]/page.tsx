@@ -68,6 +68,30 @@ export default async function Home({ params }: PageProps) {
           <div className={s.info}>{dict.about.description}</div>
         </div>
 
+        <h3 className={s.title} id="languages">
+          {dict.languagesSkills.title}
+        </h3>
+        <div className={s.greed}>
+          <div className={s.greedItem}>
+          🇺🇸 {dict.languagesSkills.en}
+          </div>
+          <div className={s.greedItem}>
+          🇪🇸 {dict.languagesSkills.es} 
+          </div>
+          <div className={s.greedItem}>
+          🇺🇦 {dict.languagesSkills.ua}
+          </div>
+          <div className={s.greedItem}>
+          🇷🇺 {dict.languagesSkills.ru}
+          </div>
+        </div>
+
+        <div className={s.p}>
+          <div className={cn(s.info, s.pt16)}>
+            {dict.languagesSkills.description}
+          </div>
+        </div>
+
         <h3 className={s.title} id="design">
           {dict.designSkills.title}
         </h3>

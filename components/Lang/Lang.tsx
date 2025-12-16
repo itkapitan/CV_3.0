@@ -9,6 +9,7 @@ import { buildLangHref, isActiveLang, saveContentScroll } from "./LangLogic";
 export default function Lang() {
   const pathname = usePathname();
   const enHref = buildLangHref("en", pathname);
+  const esHref = buildLangHref("es", pathname);
   const uaHref = buildLangHref("ua", pathname);
   const ruHref = buildLangHref("ru", pathname);
 
@@ -23,6 +24,16 @@ export default function Lang() {
         })}
       >
         EN
+      </Link>
+      <Link
+        href={esHref}
+        scroll={false}
+        onClick={saveContentScroll}
+        className={cn(s.langLink, {
+          [s.langLinkActive]: isActiveLang("es", pathname),
+        })}
+      >
+        ES
       </Link>
       <Link
         href={uaHref}

@@ -1,6 +1,6 @@
-export type Lang = "en" | "ua" | "ru";
+export type Lang = "en" | "es" | "ua" | "ru";
 
-export const supportedLangs: Lang[] = ["en", "ua", "ru"];
+export const supportedLangs: Lang[] = ["en", "es", "ua", "ru"];
 
 export function getCurrentLang(pathname: string): Lang {
   const segments = pathname.split("/").filter(Boolean);

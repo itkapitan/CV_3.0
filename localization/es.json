@@ -1,0 +1,103 @@
+{
+    "profile": {
+      "name": "Rodion Bychkovyak",
+      "position": "Jefe de UI/UX/Diseñador de productos y Desarrollador frontend"
+    },
+    "about": {
+      "title": "Acerca de mí",
+      "age": "35 años",
+      "city": "Kiev",
+      "description": "Jefe de diseño con más de 13 años de experiencia en UI/UX y front-end. He dirigido equipos en la creación de productos digitales complejos: fintech, comercio electrónico, casinos, ERP. Soy experto en diseño de interfaces, animación, branding y sistemas de diseño. Combino la creatividad con la precisión técnica y un profundo conocimiento del negocio y los usuarios."
+    },
+    "languagesSkills": {
+    "title": "Idiomas",
+    "description": "Entiendo perfectamente el inglés y respondo bien en ese idioma. He comenzado a aprender español. Soy hablante nativo de ucraniano y ruso.",
+    "en": "Inglés B1-B2",
+    "es": "Español A1 (estudiando)",
+    "ua": "Ucraniano Nativo",
+    "ru": "Ruso Nativo"
+    },
+    "designSkills": {
+      "title": "Habilidades en diseño",
+      "description": "Создаю масштабные дизайн-системы на основе токенов с гибкими вариациями компонентов, темами и адаптивными состояниями. Проектирую интерфейсы, которые понятны с первого взгляда, опираясь на исследования и тестирование. Веду проект от идеи до готового продукта, обеспечивая единый стиль и высокую скорость разработки."
+    },
+    "devSkills": {
+      "title": "Habilidades en desarrollo",
+      "description": "Desarrollo interfaces rápidas, adaptables y fiables con código limpio y una arquitectura bien pensada. Sé cómo combinar el diseño y el desarrollo para que el resultado sea impecable y funcione de forma estable. Optimizo el rendimiento, implemento tecnologías modernas y garantizo una fácil escalabilidad del proyecto."
+    },
+    "experience": {
+      "title": "Experiencia laboral"
+    },
+    "experienceCompany": [
+      {
+        "title": "Asvio Bank",
+        "position": "Jefe de Diseño UI/UX",
+        "period": "2024 - 2025 (1 año y 5 meses)",
+        "description": "Lancé desde cero la nueva aplicación bancaria móvil amobank, combinando estrategia, diseño y desarrollo en un único ecosistema. Creé un sistema de diseño escalable con documentación que aceleró el trabajo del equipo y garantizó la integridad visual del producto. Dirigí un equipo pequeño pero muy eficaz de diseñadores que diseñó una interfaz cómoda e intuitiva con un conjunto completo de funciones: créditos, depósitos, recarga de móviles, transferencias P2P e IBAN, así como otros servicios clave. Organizó una estrecha colaboración con los desarrolladores y analistas de negocios, lo que permitió lanzar el producto en la App Store y Google Play a tiempo y sin pérdida de calidad. La aplicación se convirtió en una herramienta importante para atraer y retener clientes."
+      },
+      {
+        "title": "Brain Rockets",
+        "position": "Jefe de Arte y Diseñador UI/UX",
+        "period": "2024 - 2024 (4 meses)",
+        "description": "Dirigí un equipo de seis diseñadores, combinando la creatividad y el enfoque sistemático en el desarrollo de productos. Generé conceptos para nuevos proyectos y creé bocetos de estilo informal en una tableta, marcando la dirección visual. Organizó el trabajo de manera que los diseñadores gráficos convirtieran las ideas en ilustraciones finales y los diseñadores de UI/UX las integraran en maquetas basadas en el sistema de diseño, adaptándolas al producto. Garantizó una interacción fluida dentro del equipo, lo que permitió lanzar rápidamente proyectos visualmente coherentes y técnicamente elaborados."
+      },
+      {
+        "title": "Gart Technologies",
+        "position": "Diseñador jefe de UI/UX y Desarrollador sénior de React",
+        "period": "2022-2024 (2 años)",
+        "description": "Dirigí un equipo de tres diseñadores y creé interfaces de diversa complejidad, principalmente para mercados internacionales. Realicé alrededor de diez proyectos importantes, entre ellos una cartera de criptomonedas y un servicio estatal de tecnología sanitaria para los Emiratos Árabes Unidos. Garantizé un alto nivel de calidad en el diseño y la adaptación a las características culturales y técnicas de los distintos mercados. Organizó el ciclo completo de trabajo, desde la idea y los prototipos hasta los diseños finales, lo que aceleró el lanzamiento y aumentó la competitividad de los productos."
+      },
+      {
+        "title": "Holding agroindustrial MHP",
+        "position": "Diseñador sénior de UI/UX y Desarrollador React intermedio",
+        "period": "2019-2021 (2 años)",
+        "description": "Desarrolló productos digitales para uso interno y externo de la empresa. Uno de los proyectos clave fue un sistema para socios occidentales que permitía rastrear contenedores con productos en tiempo real, indicando el puerto y el buque. Creó desde cero el sistema de diseño y la interfaz, y también participó en el desarrollo de React, lo que permitió garantizar un alto rendimiento y la comodidad del servicio. El proyecto fue muy bien recibido por la dirección, por lo que fue premiado con dos salarios. Al mismo tiempo, llevó a cabo otros proyectos: desde páginas de aterrizaje y páginas promocionales para campañas hasta banners publicitarios, manteniendo un estilo uniforme y una alta calidad de ejecución."
+      },
+      {
+        "title": "Bimp",
+        "position": "Diseñador jefe de productos y desarrollador React intermedio",
+        "period": "2019-2019 (6 meses)",
+        "description": "Desarrollé desde cero un sistema de diseño y, basándome en él, diseñé la interfaz del sistema CRM/ERP. Participó activamente en el desarrollo del front-end, lo que permitió garantizar una alta velocidad de implementación y la coherencia entre el diseño y el código. El proyecto se lanzó con éxito al mercado y sigue funcionando de forma estable, generando beneficios para la empresa y siendo una herramienta muy demandada por los clientes."
+      },
+      {
+        "title": "Renklod LDT",
+        "position": "Diseñador jefe de UI/UX y web y Desarrollador jefe de frontend",
+        "period": "2016-2019 (2 años y 7 meses)",
+        "description": "Me incorporé a la empresa como diseñador sénior e inicié la decisión estratégica de trasladar el desarrollo del outsourcing al interior de la empresa. Formé un equipo multifuncional compuesto por tres diseñadores, dos desarrolladores front-end y un desarrollador back-end. Bajo mi dirección, el equipo mejoró cuatro tiendas monomarca existentes y lanzó otras siete nuevas, cada una de las cuales muestra resultados de ventas estables y elevados. Aseguré el ciclo completo de creación de productos, desde la idea y el diseño hasta el lanzamiento y la optimización, lo que aceleró y abarató considerablemente el desarrollo de la división de comercio electrónico de la empresa. Al mismo tiempo, crecí como especialista hasta alcanzar el nivel de líder, aprendiendo no solo a realizar tareas, sino también a distribuirlas entre los miembros del equipo, realizar revisiones, ser mentor y mantener el espíritu de equipo."
+      },
+      {
+        "title": "Autónomo",
+        "position": "Diseñador sénior de UI/UX y Desarrollador sénior de front-end",
+        "period": "2015-2016 (1 años)",
+        "description": "Pasé a trabajar como autónomo para llevar a cabo mi propio proyecto educativo. Desarrollé un programa propio sobre desarrollo front-end, grabé un curso en vídeo, creé un sitio web y diseñé un sistema de ventas. Ya en el primer día del lanzamiento, las ventas ascendieron a 1300 dólares. Al mismo tiempo, realicé proyectos freelance de diversos niveles de complejidad, desde aplicaciones web y páginas de aterrizaje hasta interfaces complejas, combinando el diseño y el desarrollo para obtener el mejor resultado posible."
+      },
+      {
+        "title": "Foxtrot",
+        "position": "Diseñador sénior de productos y Desarrollador sénior de front-end",
+        "period": "2012-2015 (2 años 5 meses)",
+        "description": "Fue responsable del rediseño del producto estrella de la empresa: la tienda online Foxtrot. Realizó estudios de calidad con encuestas al público objetivo, analizó los datos obtenidos, estableció prioridades en función de los problemas detectados y los resolvió primero a nivel de diseño y luego a nivel de código. Al mismo tiempo, desarrolló páginas de aterrizaje publicitarias de ciclo completo, desde la planificación y el diseño hasta la implementación del front-end, garantizando una alta conversión y la integridad visual de la marca."
+      },
+      {
+        "title": "Genesis",
+        "position": "Desarrollador frontend intermedio",
+        "period": "2012-2012 (6 meses)",
+        "description": "Trabajó en el equipo de desarrollo de Jiji, uno de los mercados más grandes de África, similar a OLX. Participó en la creación y optimización de la interfaz de usuario, implementó nuevas funciones y garantizó el funcionamiento estable del producto bajo una carga elevada. Adquirió experiencia trabajando en una gran empresa internacional y colaborando con un equipo distribuido de desarrolladores."
+      },
+      {
+        "title": "Page",
+        "position": "Diseñador UI/UX intermedio y Desarrollador frontend intermedio",
+        "period": "2011-2012 (6 meses)",
+        "description": "La primera empresa en mi carrera en la que combiné el diseño y el desarrollo front-end. Creé proyectos de ciclo completo, desde prototipos y diseño hasta código final. Realicé alrededor de 10 proyectos de diversa complejidad, incluyendo un sitio web para un servicio de taxi, páginas de aterrizaje, un sitio web para un complejo residencial y otras soluciones comerciales. Adquirí experiencia básica en trabajo en equipo y consolidé mis habilidades en la creación de proyectos «llave en mano»."
+      },
+      {
+        "title": "Autónomo",
+        "position": "Diseñador UI/UX junior y desarrollador frontend junior",
+        "period": "2010-2011 (6 meses)",
+        "description": "Después de mis primeros proyectos (uno personal y otro comercial para unos conocidos), me lancé al mundo del freelance para monetizar mis habilidades. Trabajé en proyectos de diversos formatos: desde proyectos puramente de diseño hasta proyectos de desarrollo integral «llave en mano». Implementé interfaces, me dediqué al desarrollo front-end y back-end, así como al despliegue completo de proyectos en dominios y alojamiento web."
+      }
+    ],
+    "end": {
+      "title": "Fin. Gracias por su atención. 🫰"
+    }
+  }
+  

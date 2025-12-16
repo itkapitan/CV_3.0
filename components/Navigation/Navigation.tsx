@@ -11,6 +11,7 @@ import {
 import {
   IconBriefcase2,
   IconDevicesCode,
+  IconLanguage,
   IconPalette,
   IconUser,
 } from "@tabler/icons-react";
@@ -34,6 +35,21 @@ export default function Navigation() {
         })}
       >
         <IconUser className={s.icon} />
+      </Link>
+      <Link
+        href="#languages"
+        onClick={(e) => {
+          e.preventDefault();
+          handleNavClick(
+            e as unknown as React.MouseEvent<HTMLAnchorElement>,
+            "languages"
+          );
+        }}
+        className={cn(s.link, {
+          [s.linkActive]: active ? active === "languages" : undefined,
+        })}
+      >
+        <IconLanguage className={s.icon} />
       </Link>
       <Link
         href="#design"

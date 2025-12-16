@@ -9,6 +9,14 @@
     "city": "Kyiv",
     "description": "Head of Design with 13+ years in UI/UX and front-end. Led teams delivering complex digital products across fintech, e-commerce, casino and ERP. Strong in interface design, animation, branding and design systems. Combine creativity with technical precision and deep business and user understanding."
   },
+  "languagesSkills": {
+    "title": "Languages",
+    "description": "I understand English perfectly and respond well in English. I have started learning Spanish. I am a native speaker of Ukrainian and Russian.",
+    "en": "English B1-B2",
+    "es": "Spanish A1 (studying)",
+    "ua": "Ukrainian Native",
+    "ru": "Russian Native"
+  },
   "designSkills": {
     "title": "Design skills",
     "description": "I create large-scale token-based design systems with flexible component variations, themes, and adaptive states. I design interfaces that are clear at a glance, based on research and testing. Lead a project from idea to finished product, ensuring a consistent style and fast development speed."
