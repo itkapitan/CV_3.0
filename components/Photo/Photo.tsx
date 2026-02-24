@@ -1,6 +1,9 @@
+ "use client";
+
 import Link from "next/link";
 import s from "./Photo.module.css";
 import { IconBrandBehance, IconBrandDribbble } from "@tabler/icons-react";
+import { usePhotoGlitchCanvas } from "./PhotoLogic";
 
 type Profile = {
   name: string;
@@ -8,8 +11,11 @@ type Profile = {
 };
 
 export default function Photo({ profile }: { profile: Profile }) {
+  const canvasRef = usePhotoGlitchCanvas("/Rodion1.png");
+
   return (
     <div className={s.photoWr}>
+      <canvas ref={canvasRef} className={s.photoCanvas} />
       <div className={s.name}>{profile.name}</div>
       <div className={s.position}>{profile.position}</div>
       <div className={s.links}>

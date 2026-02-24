@@ -52,15 +52,15 @@ export default async function Home({ params }: PageProps) {
             <div className={s.infoMiniDivider}>|</div>
             <div className={s.infoMiniText}>{dict.about.city}</div>
             <div className={s.infoMiniDivider}>|</div>
-            <div className={s.infoMiniText}>
+            <div className={cn(s.infoMiniText, s.infoMiniTextUnderline)}>
               <Link href="https://t.me/radcor" target="_blank">
                 Telegram
               </Link>
             </div>
             <div className={s.infoMiniDivider}>|</div>
-            <div className={s.infoMiniText}>
-              <Link href="tel:+380665515131" target="_blank">
-                +38 (066) 551-51-31
+            <div className={cn(s.infoMiniText, s.infoMiniTextUnderline)}>
+              <Link href="tel:+380995515131" target="_blank">
+                +38 (099) 551-51-31
               </Link>
             </div>
           </div>
@@ -72,18 +72,10 @@ export default async function Home({ params }: PageProps) {
           {dict.languagesSkills.title}
         </h3>
         <div className={s.greed}>
-          <div className={s.greedItem}>
-          🇺🇸 {dict.languagesSkills.en}
-          </div>
-          <div className={s.greedItem}>
-          🇪🇸 {dict.languagesSkills.es} 
-          </div>
-          <div className={s.greedItem}>
-          🇺🇦 {dict.languagesSkills.ua}
-          </div>
-          <div className={s.greedItem}>
-          🇷🇺 {dict.languagesSkills.ru}
-          </div>
+          <div className={s.greedItem}>🇺🇸 {dict.languagesSkills.en}</div>
+          <div className={s.greedItem}>🇪🇸 {dict.languagesSkills.es}</div>
+          <div className={s.greedItem}>🇺🇦 {dict.languagesSkills.ua}</div>
+          <div className={s.greedItem}>🇷🇺 {dict.languagesSkills.ru}</div>
         </div>
 
         <div className={s.p}>

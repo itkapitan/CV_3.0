@@ -9,29 +9,54 @@
   border-radius: 16px;
   padding-bottom: 80px;
   gap: 8px;
-  background: linear-gradient(
-      180deg,
-      rgba(0, 0, 0, 0) 45%,
-      rgba(0, 0, 0, 0.8) 100%
-    ),
-    url("/Rodion1.png") lightgray 50% / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+  background: #000;
   transition: all 0.5s ease;
+}
+
+.photoWr::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 45%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.photoCanvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
 }
 
 .name {
   display: flex;
   font-size: 44px;
   font-weight: 500;
+  position: relative;
+  z-index: 2;
 }
 .position {
   display: flex;
   font-size: 16px;
+  position: relative;
+  z-index: 2;
 }
 .links {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 8px;
+  position: relative;
+  z-index: 2;
 }
 .linkItem {
   transition: color 0.2s ease;

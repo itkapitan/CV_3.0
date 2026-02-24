@@ -71,6 +71,9 @@ h3.title {
   font-weight: 400;
   line-height: 30px;
 }
+.infoMiniTextUnderline {
+  text-decoration: underline;
+}
 .info {
   color: #d8d8d8;
   font-size: 18px;
