@@ -65,7 +65,7 @@ h3.title {
   gap: 10px;
 }
 .infoMiniText {
-  color: #00a3ff;
+  color: var(--theme-primary);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -101,7 +101,7 @@ h3.title {
 .greedIcon {
   width: 24px;
   height: 24px;
-  color: #00a3ff;
+  color: var(--theme-primary);
 }
 .experience {
   display: flex;

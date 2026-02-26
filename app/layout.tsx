@@ -23,8 +23,11 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  type ThemeName = "blue" | "green";
+  const activeTheme: ThemeName = "green";
+
   return (
-    <html lang="en">
+    <html lang="en" data-theme={activeTheme}>
       <body className={rubik.className}>{children}</body>
       <ClarityInit />
     </html>

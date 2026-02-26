@@ -1,4 +1,4 @@
- "use client";
+"use client";
 
 import Link from "next/link";
 import s from "./Photo.module.css";
@@ -11,7 +11,7 @@ type Profile = {
 };
 
 export default function Photo({ profile }: { profile: Profile }) {
-  const canvasRef = usePhotoGlitchCanvas("/Rodion1.png");
+  const canvasRef = usePhotoGlitchCanvas("/Rodion3.png");
 
   return (
     <div className={s.photoWr}>

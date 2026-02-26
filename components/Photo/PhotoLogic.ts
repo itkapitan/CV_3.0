@@ -86,8 +86,8 @@ export function usePhotoGlitchCanvas(imageSrc: string) {
         const regionCount = 2 + Math.floor(Math.random() * 3); // 2..4
         regions = [];
         for (let i = 0; i < regionCount; i++) {
-          const rw = drawWidth * (0.25 + Math.random() * 0.3); // 25–55% ширины видимой части
-          const rh = drawHeight * (0.2 + Math.random() * 0.3); // 20–50% высоты видимой части
+          const rw = drawWidth * (0.05 + Math.random() * 0.15); // 5–20% ширины видимой части
+          const rh = drawHeight * (0.1 + Math.random() * 0.15); // 10–25% высоты видимой части
           const maxX = offsetX + Math.max(0, drawWidth - rw);
           const maxY = offsetY + Math.max(0, drawHeight - rh);
           const rx =
@@ -149,10 +149,7 @@ export function usePhotoGlitchCanvas(imageSrc: string) {
 
           for (let yy = y; yy < y + sliceHeight && yy < ryEnd; yy++) {
             for (let x = rxStart; x < rxEnd; x++) {
-              const srcX = Math.max(
-                rxStart,
-                Math.min(rxEnd - 1, x + offset),
-              );
+              const srcX = Math.max(rxStart, Math.min(rxEnd - 1, x + offset));
               const destIndex = (yy * width + x) * 4;
               const srcIndex = (yy * width + srcX) * 4;
               data[destIndex] = original[srcIndex];

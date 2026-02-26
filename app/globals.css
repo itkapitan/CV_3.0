@@ -1,3 +1,13 @@
+html[data-theme="blue"] {
+  --theme-primary: #00a7ff;
+  --theme-primary-hover: #0089d6;
+}
+
+html[data-theme="green"] {
+  --theme-primary: #007b72;
+  --theme-primary-hover: #003b35;
+}
+
 html,
 body {
   max-width: 100vw;

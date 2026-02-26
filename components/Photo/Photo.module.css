@@ -62,5 +62,5 @@
   transition: color 0.2s ease;
 }
 .linkItem:hover {
-  color: #00a3ff;
+  color: var(--theme-primary);
 }

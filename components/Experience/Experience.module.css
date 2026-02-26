@@ -7,7 +7,7 @@
 .expItem:hover:after,
 .expItem:hover:after {
   content: "";
-  border: 8px solid #00a3ff;
+  border: 8px solid var(--theme-primary);
 }
 .expLeft,
 .expLeft * {
@@ -67,7 +67,7 @@
 }
 .expPosition,
 .expPeriod {
-  color: #00a3ff;
+  color: var(--theme-primary);
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
