@@ -11,7 +11,7 @@ type Profile = {
 };
 
 export default function Photo({ profile }: { profile: Profile }) {
-  const canvasRef = usePhotoGlitchCanvas("/Rodion3.png");
+  const canvasRef = usePhotoGlitchCanvas("/Rodion4.png");
 
   return (
     <div className={s.photoWr}>

@@ -1,11 +1,17 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import {
   SCROLL_CONTAINER_ID,
   SCROLL_STORAGE_KEY,
 } from "@/components/Lang/LangLogic";
 
 // Идентификаторы секций по умолчанию (соответствуют id заголовков в контенте)
-export const SECTION_IDS = ["about", "design", "dev", "exp"] as const;
+export const SECTION_IDS = [
+  "about",
+  "languages",
+  "design",
+  "dev",
+  "exp",
+] as const;
 export type SectionId = (typeof SECTION_IDS)[number];
 
 // Опции для плавного скролла к целевой секции внутри контейнера
@@ -14,6 +20,9 @@ export type SmoothScrollOptions = {
   updateHash?: boolean;
   offset?: number;
 };
+
+// Имя события для ручного выбора секции (чтобы избежать мерцания при скролле)
+const NAV_MANUAL_SELECT_EVENT = "nav-manual-select";
 
 // Плавно скроллит контейнер к секции и обновляет hash в адресной строке
 export function handleNavClick(
@@ -38,6 +47,11 @@ export function handleNavClick(
 
   const delta = targetRect.top - containerRect.top - offset;
   const nextTop = Math.max(0, currentTop + delta);
+
+  // Оповещаем хуки, что мы начали ручной скролл к конкретной секции
+  window.dispatchEvent(
+    new CustomEvent(NAV_MANUAL_SELECT_EVENT, { detail: targetId })
+  );
 
   container.scrollTo({ top: nextTop, behavior: "smooth" });
 
@@ -93,6 +107,10 @@ export function useActiveSection(
   // После маунта активная секция вычислится из hash или прокрутки контейнера.
   const [active, setActive] = useState<string>("");
 
+  // Реф для хранения целевой секции при программном скролле.
+  // Пока мы скроллим к ней, мы игнорируем промежуточные секции.
+  const manualIdRef = useRef<string | null>(null);
+
   useEffect(() => {
     const container = document.getElementById(containerId);
     if (!container) return;
@@ -101,6 +119,18 @@ export function useActiveSection(
     const update = () => {
       ticking = false;
       const current = calculateActiveSection(container, sectionIds, offset);
+
+      // Если мы в режиме ручного скролла
+      if (manualIdRef.current) {
+        // Если мы достигли целевой секции (она стала ближайшей), выходим из режима
+        if (current === manualIdRef.current) {
+          manualIdRef.current = null;
+        } else {
+          // Иначе игнорируем обновление — оставляем активной ту, что выбрали в handleNavClick
+          return;
+        }
+      }
+
       setActive((prev) => (prev === current ? prev : current));
     };
 
@@ -117,16 +147,25 @@ export function useActiveSection(
       if (fromHash) setActive(fromHash);
     };
 
+    // Слушатель для ручного выбора секции из handleNavClick
+    const onManualSelect = (e: Event) => {
+      const id = (e as CustomEvent).detail;
+      manualIdRef.current = id;
+      setActive(id);
+    };
+
+    // Если пользователь сам начал скроллить, отменяем принудительную фиксацию
+    const onUserScroll = () => {
+      manualIdRef.current = null;
+    };
+
     // Восстанавливаем позицию скролла (если сохранена) и начальную активную секцию
     try {
-      // Пробуем сначала получить из localStorage (переживает перезапуски вкладки),
-      // если нет — fallback к sessionStorage
       const savedTop =
         localStorage.getItem(SCROLL_STORAGE_KEY) ??
         sessionStorage.getItem(SCROLL_STORAGE_KEY);
       if (savedTop) {
         container.scrollTop = parseInt(savedTop, 10) || 0;
-        // не удаляем здесь ключ, пусть очистится на стороне страницы при ресторе
       }
       const fromHash = getInitialActiveFromHash(sectionIds);
       if (fromHash) {
@@ -140,15 +179,17 @@ export function useActiveSection(
     } catch {}
 
     container.addEventListener("scroll", onScroll, { passive: true });
+    container.addEventListener("wheel", onUserScroll, { passive: true });
+    container.addEventListener("touchstart", onUserScroll, { passive: true });
     window.addEventListener("resize", onResize, { passive: true });
     window.addEventListener("hashchange", onHashChange);
+    window.addEventListener(NAV_MANUAL_SELECT_EVENT, onManualSelect);
 
     // Инициализация после одного кадра, чтобы учесть возможный рестор скролла
     requestAnimationFrame(update);
 
     const onBeforeUnload = () => {
       try {
-        // Сохраняем и в sessionStorage, и в localStorage, чтобы рестор работал и после полной перезагрузки
         sessionStorage.setItem(SCROLL_STORAGE_KEY, String(container.scrollTop));
         localStorage.setItem(SCROLL_STORAGE_KEY, String(container.scrollTop));
         const current = calculateActiveSection(container, sectionIds, offset);
@@ -161,8 +202,11 @@ export function useActiveSection(
 
     return () => {
       container.removeEventListener("scroll", onScroll);
+      container.removeEventListener("wheel", onUserScroll);
+      container.removeEventListener("touchstart", onUserScroll);
       window.removeEventListener("resize", onResize);
       window.removeEventListener("hashchange", onHashChange);
+      window.removeEventListener(NAV_MANUAL_SELECT_EVENT, onManualSelect);
       window.removeEventListener("beforeunload", onBeforeUnload);
       window.removeEventListener("pagehide", onBeforeUnload);
     };

@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   type ThemeName = "blue" | "green";
-  const activeTheme: ThemeName = "green";
+  const activeTheme: ThemeName = "blue";
 
   return (
     <html lang="en" data-theme={activeTheme}>
