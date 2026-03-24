@@ -15,6 +15,13 @@ export default function Photo({ profile }: { profile: Profile }) {
 
   return (
     <div className={s.photoWr}>
+      <img
+        src="/Rodion4.png"
+        alt={profile.name}
+        className={s.photoBase}
+        loading="eager"
+        decoding="sync"
+      />
       <canvas ref={canvasRef} className={s.photoCanvas} />
       <div className={s.name}>{profile.name}</div>
       <div className={s.position}>{profile.position}</div>

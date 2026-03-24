@@ -24,15 +24,12 @@ export default function ClarityInit() {
       } catch {}
     };
 
-    // Если страница уже загружена, инициализируем сразу
-    if (document.readyState === "complete") {
-      // Небольшая задержка для гарантии загрузки всех стилей
-      setTimeout(initClarity, 100);
+    // Если страница уже загружена или интерактивна, инициализируем сразу
+    if (document.readyState === "complete" || document.readyState === "interactive") {
+      initClarity();
     } else {
-      // Ждем полной загрузки страницы
-      window.addEventListener("load", () => {
-        setTimeout(initClarity, 100);
-      });
+      // Ждем готовности DOM
+      window.addEventListener("DOMContentLoaded", initClarity);
     }
   }, []);
 
