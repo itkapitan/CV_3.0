@@ -59,8 +59,8 @@ export default async function Home({ params }: PageProps) {
             </div>
             <div className={s.infoMiniDivider}>|</div>
             <div className={cn(s.infoMiniText, s.infoMiniTextUnderline)}>
-              <Link href="tel:+380995515131" target="_blank">
-                +38 (099) 551-51-31
+              <Link href="tel:+380665515131" target="_blank">
+                +38 (066) 551-51-31
               </Link>
             </div>
           </div>
