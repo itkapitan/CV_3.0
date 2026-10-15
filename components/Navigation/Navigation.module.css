@@ -29,3 +29,38 @@
   width: 30px;
   height: 30px;
 }
+
+@media (max-width: 1024px) {
+  .nav {
+    flex-direction: row;
+    width: 100%;
+    height: 58px;
+    border-radius: 16px 16px 0 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: #18191b;
+    flex-shrink: 0;
+    z-index: 10;
+  }
+  .link {
+    flex: 1;
+    width: auto;
+    height: 58px;
+  }
+  .icon {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav {
+    height: 52px;
+  }
+  .link {
+    height: 52px;
+  }
+  .icon {
+    width: 22px;
+    height: 22px;
+  }
+}

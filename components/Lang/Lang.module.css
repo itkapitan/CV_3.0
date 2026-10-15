@@ -24,3 +24,16 @@
   background: var(--theme-primary);
   color: #fff;
 }
+
+@media (max-width: 768px) {
+  .lang {
+    width: 140px;
+    height: 34px;
+    top: -42px;
+    right: 0;
+  }
+  .langLink {
+    height: 34px;
+    font-size: 11px;
+  }
+}

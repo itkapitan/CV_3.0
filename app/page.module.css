@@ -98,6 +98,12 @@ h3.title {
   font-weight: 400;
   line-height: 26px;
 }
+.infoBold {
+  display: block;
+  color: #fff;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
 .greed {
   display: grid;
   width: 100%;
@@ -124,4 +130,107 @@ h3.title {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+.desktopPhotoWr {
+  display: flex;
+  height: 100%;
+}
+
+.inlinePhotoWr {
+  display: none;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    height: 100%;
+    max-height: 100%;
+  }
+
+  .desktopPhotoWr {
+    display: none;
+  }
+
+  .inlinePhotoWr {
+    display: flex;
+  }
+
+  .content {
+    padding: 16px 24px;
+    height: calc(100% - 58px);
+    border-radius: 0 0 16px 16px;
+  }
+
+  .starlink {
+    height: 75px;
+    top: -64px;
+    right: 175px;
+  }
+
+  h2.title {
+    font-size: 36px;
+    padding: 24px 0 12px 0;
+  }
+
+  h3.title {
+    font-size: 26px;
+    padding: 24px 0 12px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .content {
+    padding: 14px 16px;
+    height: calc(100% - 52px);
+    gap: 8px;
+  }
+
+  .starlink {
+    height: 48px;
+    top: -42px;
+    right: 145px;
+  }
+
+  h2.title {
+    font-size: 28px;
+    padding: 18px 0 8px 0;
+  }
+
+  h3.title {
+    font-size: 22px;
+    padding: 18px 0 8px 0;
+  }
+
+  .info {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .infoMini {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    row-gap: 4px;
+  }
+
+  .infoMiniText {
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  .greed {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .greedItem {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 350px) {
+  .starlink {
+    display: none;
+  }
 }

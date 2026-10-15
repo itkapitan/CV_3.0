@@ -36,6 +36,11 @@ export function usePhotoGlitchCanvas(imageSrc: string) {
         return;
       }
 
+      if (canvas.offsetParent === null && canvas.clientWidth === 0) {
+        animationFrameId = requestAnimationFrame(render);
+        return;
+      }
+
       const width = canvas.clientWidth || canvas.width || img.width;
       const height = canvas.clientHeight || canvas.height || img.height;
 

@@ -32,6 +32,21 @@ type PageProps = {
   params: Promise<{ lang: string }>;
 };
 
+function formatDescription(text: string) {
+  if (!text.includes("**")) return text;
+  const parts = text.split(/(\*\*[^*]+\*\*)/g);
+  return parts.map((part, index) => {
+    if (part.startsWith("**") && part.endsWith("**")) {
+      return (
+        <strong key={index} className={s.infoBold}>
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 export default async function Home({ params }: PageProps) {
   const { lang } = await params;
   const dict = await getDictionary(lang);
@@ -48,8 +63,13 @@ export default async function Home({ params }: PageProps) {
         />
       </div>
       <Navigation />
-      <Photo profile={dict.profile} />
+      <div className={s.desktopPhotoWr}>
+        <Photo profile={dict.profile} variant="desktop" />
+      </div>
       <div id="content-scroll" className={s.content}>
+        <div className={s.inlinePhotoWr}>
+          <Photo profile={dict.profile} variant="inline" />
+        </div>
         <h2 className={s.title} id="about">
           {dict.about.title}
         </h2>
@@ -72,7 +92,7 @@ export default async function Home({ params }: PageProps) {
             </div>
           </div>
 
-          <div className={s.info}>{dict.about.description}</div>
+          <div className={s.info}>{formatDescription(dict.about.description)}</div>
         </div>
 
         <h3 className={s.title} id="languages">

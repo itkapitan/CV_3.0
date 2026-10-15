@@ -37,3 +37,19 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+@media (max-width: 1024px) {
+  body {
+    height: 100dvh;
+    min-height: 100dvh;
+    padding: 72px 16px 16px 16px;
+    align-items: stretch;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    padding: 56px 12px 12px 12px;
+  }
+}
