@@ -40,6 +40,13 @@ export default async function Home({ params }: PageProps) {
     <div className={s.container}>
       <ScrollRestorer />
       <Lang />
+      <div className={s.starlink}>
+        <img
+          src="/starlink.png"
+          alt="Starlink & Solar"
+          className={s.starlinkImg}
+        />
+      </div>
       <Navigation />
       <Photo profile={dict.profile} />
       <div id="content-scroll" className={s.content}>

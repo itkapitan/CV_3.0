@@ -8,7 +8,7 @@
   position: absolute;
   top: -50px;
   right: 0px;
-  z-index: 1;
+  z-index: 2;
 }
 .langLink {
   display: flex;
